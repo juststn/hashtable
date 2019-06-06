@@ -1,6 +1,5 @@
 #include <iostream>
 #include <iomanip>
-//#include <vector>
 #include <string>
 #include <cstring>
 #include <cmath>
@@ -11,6 +10,17 @@
 
 using namespace std;
 
+/*Hash Table Program:
+StudentList program using a hash table
+It will rehash the table after 3 collisions.
+Commands:
+
+ADD- Make new student entry
+DELETE- Delete student entry
+GENERATE-STUDENTS- Generate students with random GPA and name
+PRINT- Print list of students and info
+
+*/
 void createTable(Node** &hashTable, int size);
 void addToHash(Node** &hashTable, Node* Student, int size, int &collisionNumber);
 int  generateHashNumber(int size, int studentID);
